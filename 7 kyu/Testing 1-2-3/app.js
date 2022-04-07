@@ -19,3 +19,4 @@ let number = function(array){
   }
 
   console.log(number(test), ans)
+  
