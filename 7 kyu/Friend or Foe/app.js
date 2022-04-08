@@ -19,3 +19,4 @@ function friend(friends){
   }
 
   console.log(friend(input),output)
+  
