@@ -7,9 +7,11 @@ For example: (Input --> Output)
 -32 --> 5
 Let's assume that all numbers in the input will be integer values. */
 
-let input = 10
-
-let output = 1
+let input = -32
+let output = 5
 
 function sumDigits(number) {
+    return Math.abs(number).toString().split("").reduce( (a,b) => a + +b, 0 )
 }
+
+console.log( sumDigits(input),output )
