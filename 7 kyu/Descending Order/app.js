@@ -7,11 +7,17 @@ Input: 145263 Output: 654321
 
 Input: 123456789 Output: 987654321 */
 
-let input = 123456789
+let input = 123456789;
 
-let output = 987654321
+let output = 987654321;
 
-function descendingOrder(number){
-    return parseInt( number.toString().split('').sort( (a,b) => b-a ).join('') )
+function descendingOrder(number) {
+  return parseInt(
+    number
+      .toString()
+      .split("")
+      .sort((a, b) => b - a)
+      .join("")
+  );
 }
-console.log(descendingOrder(input),output)
+console.log(descendingOrder(input), output);
