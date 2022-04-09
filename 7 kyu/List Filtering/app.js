@@ -5,9 +5,9 @@ filter_list([1,2,'a','b']) == [1,2]
 filter_list([1,'a','b',0,15]) == [1,0,15]
 filter_list([1,2,'aasf','1','123',123]) == [1,2,123] */
 
-test = [1,2,'a','b']
+test = [1, 2, "a", "b"];
 
-ans = [1,2]
+ans = [1, 2];
 
 /* function filter_list(array) {
     // Return a new array with the strings filtered out
@@ -19,8 +19,8 @@ ans = [1,2]
     return filtered
   } */
 
-  function filter_list(array) {
-    return array.filter( element => typeof element == 'number')
-  }
+function filter_list(array) {
+  return array.filter((element) => typeof element == "number");
+}
 
-console.log(filter_list(test),ans)
+console.log(filter_list(test), ans);

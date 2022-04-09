@@ -5,13 +5,12 @@ Example:
 "riley" --> "Hello Riley!"
 "JACK"  --> "Hello Jack!" */
 
-let input = "JACK"
+let input = "JACK";
 
-let output = "Hello Jack!"
+let output = "Hello Jack!";
 
-var greet = function(name) {
-    return `Hello ${name.charAt(0).toUpperCase() + name.toLowerCase().slice(1)}!`
+var greet = function (name) {
+  return `Hello ${name.charAt(0).toUpperCase() + name.toLowerCase().slice(1)}!`;
 };
 
-
-console.log(greet(input),output)
+console.log(greet(input), output);

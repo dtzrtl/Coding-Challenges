@@ -12,13 +12,16 @@ A string consists of lowercase latin letters, digits and symbols.
 
 [output] a string */
 
-input = "ultr53o?n"
+input = "ultr53o?n";
 
-output = "nortlu"
-
+output = "nortlu";
 
 function reverseLetter(str) {
-    return str.split("").reverse().filter( c => c.toLowerCase() != c.toUpperCase() ).join("")
-  }
+  return str
+    .split("")
+    .reverse()
+    .filter((c) => c.toLowerCase() != c.toUpperCase())
+    .join("");
+}
 
-console.log(reverseLetter(input),output)
+console.log(reverseLetter(input), output);

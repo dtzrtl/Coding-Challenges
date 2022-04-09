@@ -9,14 +9,13 @@ Examples:
 number([]) // => []
 number(["a", "b", "c"]) // => ["1: a", "2: b", "3: c"] */
 
-let test = ["a", "b", "c"]
+let test = ["a", "b", "c"];
 
-let ans = ["1: a", "2: b", "3: c"]
+let ans = ["1: a", "2: b", "3: c"];
 
-let number = function(array){
-    //your awesome code here
-    return array.map((element,index) => index + 1 + ": " + element)
-  }
+let number = function (array) {
+  //your awesome code here
+  return array.map((element, index) => index + 1 + ": " + element);
+};
 
-  console.log(number(test), ans)
-  
+console.log(number(test), ans);
