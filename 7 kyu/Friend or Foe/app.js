@@ -9,14 +9,13 @@ i.e.
 friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 Note: keep the original order of the names in the output. */
 
-input = ["Ryan", "Kieran", "Jason", "Yous"]
+input = ["Ryan", "Kieran", "Jason", "Yous"];
 
-output = ["Ryan", "Yous"]
+output = ["Ryan", "Yous"];
 
-function friend(friends){
-    //your code here
-    return friends.filter( element => element.length == 4)
-  }
+function friend(friends) {
+  //your code here
+  return friends.filter((element) => element.length == 4);
+}
 
-  console.log(friend(input),output)
-  
+console.log(friend(input), output);
