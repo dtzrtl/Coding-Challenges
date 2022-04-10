@@ -25,4 +25,4 @@ function dropCap(str) {
     .join(" ");
 }
 
-console.log(dropCap(input), output);
+console.log(dropCap(input);
