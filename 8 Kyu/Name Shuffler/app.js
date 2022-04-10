@@ -11,4 +11,4 @@ function nameShuffler(str) {
   return str.split(" ").reverse().join(" ");
 }
 
-console.log(nameShuffler(input), output);
+console.log(nameShuffler(input));
