@@ -1,5 +1,5 @@
 /* 
-
+Description
 */
 
 let input = 0;
@@ -11,3 +11,7 @@ function a(b) {
 
 console.log(a(input), output);
 console.log(a(input) === output);
+
+/* 
+Other Solutions
+*/
