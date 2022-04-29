@@ -14,12 +14,20 @@ let input = ["xyaabbbccccdefww", "xxxxyyyyabklmopq"];
 let output = "abcdefklmopqwxy";
 
 function longest(s1, s2) {
-  return 0;
+  return (s1 + s2)
+    .split("")
+    .sort()
+    .filter((el, i, arr) => arr.indexOf(el) === i)
+    .join("");
 }
 
-console.log(longest(input), output);
-console.log(longest(input) === output);
+console.log(longest(...input), output);
+console.log(longest(...input) === output);
 
 /* 
-Other Solutions
+const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
+
+function longest(s1, s2) {
+  return Array.from(new Set(s1 + s2)).sort().join('');
+}
 */
