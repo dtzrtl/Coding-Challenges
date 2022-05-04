@@ -2,16 +2,24 @@
 Description
 */
 
-let input = 0;
-let output = 0;
+let input = 13;
+let output = "13 is prime";
 
-function a(b) {
-  return 0;
+function solution(a) {
+  ans = [];
+  for (i = 2; i < a; i++) {
+    if (a % i === 0) ans.push(i);
+  }
+  return ans.length === 0 ? `${a} is prime` : ans;
 }
 
-console.log(a(input), output);
-console.log(a(input) === output);
+console.log(solution(input), output);
+console.log(solution(input) === output);
 
 /* 
-Other Solutions
+function divisors(integer) {
+  var res = []
+  for (var i = 2; i <= Math.floor(integer / 2); ++i) if (integer % i == 0) res.push(i);
+  return res.length ? res : integer + ' is prime'
+};
 */
