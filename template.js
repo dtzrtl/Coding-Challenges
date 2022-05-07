@@ -13,5 +13,7 @@ console.log(solution(input), output);
 console.log(solution(input) === output);
 
 /* 
+
 Other Solutions
+
 */
